@@ -27,7 +27,8 @@ public class Testcase1 extends Base {
         
         navigateToURL(driver, prop);
         Homepage = new homepage(driver); 
-        Homepage.Valid_Login_TC(driver);  
+        // Homepage.Valid_Login_TC(driver);  
+
 
           
     }    

@@ -1,10 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 62.791 s <<< FAILURE! - in TestSuite
-TC_002(runner.Testcase2)  Time elapsed: 9.577 s  <<< FAILURE!
-java.lang.NoClassDefFoundError: pages/Deposit
-	at runner.Testcase2.TC_002(Testcase2.java:31)
-Caused by: java.lang.ClassNotFoundException: pages.Deposit
-	at runner.Testcase2.TC_002(Testcase2.java:31)
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 72.494 s <<< FAILURE! - in TestSuite
+TC_002(runner.Testcase2)  Time elapsed: 2.006 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: pages/homepage
+	at runner.Testcase2.TC_002(Testcase2.java:29)
+Caused by: java.lang.ClassNotFoundException: pages.homepage
+	at runner.Testcase2.TC_002(Testcase2.java:29)
 
