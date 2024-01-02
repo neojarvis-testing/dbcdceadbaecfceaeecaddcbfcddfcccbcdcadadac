@@ -1,0 +1,33 @@
+# Created at 2024-01-02T11:46:03.494
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:397)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+
+# Created at 2024-01-02T11:46:05.054
+Unexpected IOException with stream: 2024-01-02 11:46:05 INFO  [utils.Base] Browser Launched
+
+
+# Created at 2024-01-02T11:46:07.791
+Unexpected IOException with stream: 2024-01-02 11:46:07 INFO  [utils.Base] Browser Loaded the URL
+
+
+# Created at 2024-01-02T11:46:08.620
+Unexpected IOException: 5,1,runner.Testcase1,TC_001(runner.Testcase1),runner.Testcase1,null,null
+
+
+# Created at 2024-01-02T11:46:10.487
+Unexpected IOException with stream: 2024-01-02 11:46:10 INFO  [pages.homepage] 1234
+
+
+# Created at 2024-01-02T11:46:10.490
+Unexpected IOException: 6,1,runner.Testcase1,TC_001(runner.Testcase1),null,null,null
+
+
+# Created at 2024-01-02T11:46:11.205
+Unexpected IOException: 2,1,org.apache.maven.surefire.testng.TestNGDirectoryTestSuite,runner.Testcase1,null,null,null
+
+

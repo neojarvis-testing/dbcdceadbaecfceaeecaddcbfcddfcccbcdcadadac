@@ -1,0 +1,38 @@
+# Created at 2024-01-02T11:47:28.904
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:397)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+
+# Created at 2024-01-02T11:47:29.510
+Unexpected IOException with stream: Jan 02, 2024 11:47:29 AM org.openqa.selenium.remote.tracing.opentelemetry.OpenTelemetryTracer createTracer
+INFO: Using OpenTelemetry for tracing
+
+
+# Created at 2024-01-02T11:47:31.830
+Unexpected IOException with stream: 2024-01-02 11:47:31 INFO  [utils.Base] Browser Launched
+
+
+# Created at 2024-01-02T11:47:34.360
+Unexpected IOException with stream: 2024-01-02 11:47:34 INFO  [utils.Base] Browser Loaded the URL
+
+
+# Created at 2024-01-02T11:47:34.990
+Unexpected IOException: 5,1,runner.Testcase1,TC_001(runner.Testcase1),runner.Testcase1,null,null
+
+
+# Created at 2024-01-02T11:47:36.719
+Unexpected IOException with stream: 2024-01-02 11:47:36 INFO  [pages.homepage] 1234
+
+
+# Created at 2024-01-02T11:47:36.721
+Unexpected IOException: 6,1,runner.Testcase1,TC_001(runner.Testcase1),null,null,null
+
+
+# Created at 2024-01-02T11:47:37.496
+Unexpected IOException: 2,1,org.apache.maven.surefire.testng.TestNGDirectoryTestSuite,runner.Testcase1,null,null,null
+
+

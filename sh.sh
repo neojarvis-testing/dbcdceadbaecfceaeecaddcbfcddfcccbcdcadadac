@@ -1,28 +1,45 @@
-#!/usr/bin/bash
+#!/bin/bash
 
+# Remove redundant log file
+rm -rf /home/coder/project/log.log
+
+# Set log file path
+log="/home/coder/projects/log.log"
+
+# Function to check if a directory is empty
 check_directory_empty() {
     local directory=$1
     local name=$2
     if [ -z "$(ls -A $directory)" ]; then
-        echo $2 "-notexists"
+        echo $name "-notexists"
     else
-        echo $2 "-exists" 
+        echo $name "-exists" 
     fi
 }
+
+# Clean directories
 rm -rf /home/coder/project/workspace/Project/screenshot
 rm -rf /home/coder/project/workspace/Project/logs
 rm -rf /home/coder/project/workspace/Project/reports
-rm -rf /home/coder/project/log.log
-touch /home/coder/project/log.log
+
+# Copy files
 cp /home/coder/project/workspace/selenium/EventHandler.java /home/coder/project/workspace/Project/src/test/java/utils/EventHandler.java
+
+# Navigate to the project directory
 cd /home/coder/project/workspace/Project
-mvn -q test
+
+# Run Maven test and redirect output to the log file
+mvn -q test 
+
+# Copy another file, possibly overwriting the previous one
 cp /home/coder/project/workspace/selenium/EventHandleDummy.java /home/coder/project/workspace/Project/src/test/java/utils/EventHandler.java
-cat /home/coder/project/log.log
+
+# Set directory paths
 logdir="/home/coder/project/workspace/Project/logs"
 scrdir="/home/coder/project/workspace/Project/screenshot"
 reportsdir="/home/coder/project/workspace/Project/reports"
 
-check_directory_empty $logdir "log";
-check_directory_empty $scrdir "scr";
-check_directory_empty $reportsdir "report";
+# Check directory emptiness and append results to the log file
+check_directory_empty $logdir "log" >> $log
+check_directory_empty $scrdir "scr"  >> $log
+check_directory_empty $reportsdir "report"  >> $log
